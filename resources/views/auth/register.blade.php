@@ -46,9 +46,9 @@
                                     <i class="fal fa-lock"></i>
                                  </div>
                               </div>
-                              <button class="tp-btn w-100"> <span></span> Sign Up</button>
+                              <button class="tp-btn w-100"> <span></span> Register</button>
                               <div class="sign__new text-center mt-20">
-                                 <p>Already in Markit ? <a href="{{route('login')}}"> Sign In</a></p>
+                                 <p>Already in Markit ? <a href="{{route('login')}}"> Login</a></p>
                               </div>
                            </form>
                         </div>
