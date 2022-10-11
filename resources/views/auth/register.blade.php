@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                 <div class="sign__wrapper white-bg">
-                    <div class="sign__form">\
+                    <div class="sign__form">
                         <form action="#">
                             <div class="sign__input-wrapper mb-25">
                                 <h5>Full Name</h5>
