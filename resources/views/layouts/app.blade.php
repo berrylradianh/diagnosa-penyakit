@@ -43,7 +43,7 @@
                      <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-4">
                         <div class="header__top-right d-flex justify-content-end align-items-center">
                            <div class="header__login">
-                              <a href="#"><svg viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <a href="{{ route('login') }}"><svg viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <path d="M5.99995 6.83333C7.61078 6.83333 8.91662 5.5275 8.91662 3.91667C8.91662 2.30584 7.61078 1 5.99995 1C4.38912 1 3.08328 2.30584 3.08328 3.91667C3.08328 5.5275 4.38912 6.83333 5.99995 6.83333Z" stroke="#031220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                                  <path d="M11.0108 12.6667C11.0108 10.4092 8.76497 8.58333 5.99997 8.58333C3.23497 8.58333 0.989136 10.4092 0.989136 12.6667" stroke="#031220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                                  </svg> Login</a>
@@ -58,7 +58,7 @@
                   <div class="row align-items-center">
                      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
                         <div class="logo">
-                           <a href="#">
+                           <a href="{{route('home')}}">
                               <img src="{{ asset('assets/img/logo.png') }}" alt="logo">
                            </a>
                         </div>
@@ -68,7 +68,7 @@
                            <nav id="mobile-menu">
                               <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="{{route('home')}}">Home</a>
                                  </li>
                                  <li>
                                     <a href="#">About</a>
