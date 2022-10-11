@@ -104,10 +104,16 @@
                       <div class="offcanvas__content">
                          <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo logo">
-                               <a href="index.html">
+                               <a href="{{route('home')}}">
                                <img src="{{ asset('assets/img/logo.png') }}" alt="logo">
                                </a>
                             </div>
+                            <div class="header__login">
+                              <a href="{{ route('login') }}"><svg viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.99995 6.83333C7.61078 6.83333 8.91662 5.5275 8.91662 3.91667C8.91662 2.30584 7.61078 1 5.99995 1C4.38912 1 3.08328 2.30584 3.08328 3.91667C3.08328 5.5275 4.38912 6.83333 5.99995 6.83333Z" stroke="#031220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.0108 12.6667C11.0108 10.4092 8.76497 8.58333 5.99997 8.58333C3.23497 8.58333 0.989136 10.4092 0.989136 12.6667" stroke="#031220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> Login</a>
+                           </div>
                             <div class="offcanvas__close">
                                <button class="offcanvas__close-btn" data-bs-toggle="modal" data-bs-target="#offcanvasmodal">
                                   <i class="fal fa-times"></i>
