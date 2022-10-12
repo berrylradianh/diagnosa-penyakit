@@ -22,7 +22,7 @@
                             <div class="sign__input-wrapper mb-25">
                                 <h5>Email</h5>
                                 <div class="sign__input">
-                                    <input type="text" placeholder="e-mail address">
+                                    <input type="email" placeholder="e-mail address" required>
                                     <i class="fal fa-envelope"></i>
                                 </div>
                             </div>
@@ -30,8 +30,9 @@
                             <div class="sign__input-wrapper mb-10">
                                 <h5>Password</h5>
                                 <div class="sign__input">
-                                    <input type="text" placeholder="Password">
+                                    <input id = "input_password" type="password" placeholder="Password" required>
                                     <i class="fal fa-lock"></i>
+                                    <i class="fal fa-eye" style="margin-left: 80%;" id="eye" onclick="toggle()"></i>
                                 </div>
                             </div>
 
@@ -54,4 +55,20 @@
     </div>
 </section>
 <!-- sign up area end -->
+
+<script>
+    var state = false;
+
+    function toggle() {
+        if (state) {
+            document.getElementById("input_password").setAttribute("type", "password");
+            document.getElementById("eye").setAttribute("class", "fal fa-eye");
+            state = false;
+        } else {
+            document.getElementById("input_password").setAttribute("type", "text");
+            document.getElementById("eye").setAttribute("class", "fal fa-eye-slash");
+            state = true;
+        }
+    }
+</script>
 @endsection

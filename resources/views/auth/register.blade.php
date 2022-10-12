@@ -38,16 +38,18 @@
                             <div class="sign__input-wrapper mb-25">
                                 <h5>Password</h5>
                                 <div class="sign__input">
-                                    <input type="text" placeholder="Password">
+                                    <input id="input_password" type="text" placeholder="Password">
                                     <i class="fal fa-lock"></i>
+                                    <i class="fal fa-eye" style="margin-left: 80%;" id="eye" onclick="toggle_password()"></i>
                                 </div>
                             </div>
 
                             <div class="sign__input-wrapper mb-10">
                                 <h5>Password Confirm</h5>
                                 <div class="sign__input">
-                                    <input type="text" placeholder="Re-Password">
+                                    <input id="input_password_confirm" type="text" placeholder="Re-Password">
                                     <i class="fal fa-lock"></i>
+                                    <i class="fal fa-eye" style="margin-left: 80%;" id="eye_confirm" onclick="toggle_password_confirm()"></i>
                                 </div>
                             </div>
 
@@ -64,4 +66,32 @@
     </div>
 </section>
 <!-- sign up area end -->
+
+<script>
+    var state = false;
+
+    function toggle_password() {
+        if (state) {
+            document.getElementById("input_password").setAttribute("type", "password");
+            document.getElementById("eye").setAttribute("class", "fal fa-eye");
+            state = false;
+        } else {
+            document.getElementById("input_password").setAttribute("type", "text");
+            document.getElementById("eye").setAttribute("class", "fal fa-eye-slash");
+            state = true;
+        }
+    }
+
+    function toggle_password_confirm() {
+        if (state) {
+            document.getElementById("input_password_confirm").setAttribute("type", "password");
+            document.getElementById("eye_confirm").setAttribute("class", "fal fa-eye");
+            state = false;
+        } else {
+            document.getElementById("input_password_confirm").setAttribute("type", "text");
+            document.getElementById("eye_confirm").setAttribute("class", "fal fa-eye-slash");
+            state = true;
+        }
+    }
+</script>
 @endsection
