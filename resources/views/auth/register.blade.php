@@ -40,7 +40,7 @@
                             <div class="sign__input-wrapper mb-25">
                                 <h5>Password</h5>
                                 <div class="sign__input">
-                                    <input id="input_password" type="text" placeholder="Password" required>
+                                    <input id="input_password" type="password" placeholder="Password" required>
                                     <i class="fal fa-lock"></i>
                                     <i class="fal fa-eye" style="margin-left: 80%;" id="eye" onclick="toggle_password()"></i>
                                 </div>
@@ -50,7 +50,7 @@
                             <div class="sign__input-wrapper mb-10">
                                 <h5>Password Confirm</h5>
                                 <div class="sign__input">
-                                    <input id="input_password_confirm" type="text" placeholder="Re-Password" required>
+                                    <input id="input_password_confirm" type="password" placeholder="Re-Password" required>
                                     <i class="fal fa-lock"></i>
                                     <i class="fal fa-eye" style="margin-left: 80%;" id="eye_confirm" onclick="toggle_password_confirm()"></i>
                                 </div>
