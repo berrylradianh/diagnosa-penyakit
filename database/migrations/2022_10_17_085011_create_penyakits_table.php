@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('penyakits', function (Blueprint $table) {
             $table->id('id_penyakit');
+            $table->string('url');
             $table->string('nama');
             $table->text('keterangan');
             $table->text('solusi');

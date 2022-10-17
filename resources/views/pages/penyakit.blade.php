@@ -63,19 +63,17 @@
                                              <div class="row gx-0">
                                                 <div class="col-xxl-4 col-xl-4 col-lg-4">
                                                    <div class="course__thumb w-img p-relative fix">
-                                                      <a href="course-details.html">
                                                          <img src="assets/img/Cercospora.jpg" alt="">
-                                                      </a>
                                                    </div>
                                                 </div>
                                                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                                                    <div class="course__right p-relative">
                                                       <div class="course__content p-relative">
                                                          <div class="course__tag-2 purple-bg">
-                                                            <a href="#">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
+                                                            <a href="{{ route('home') }}">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
                                                          </div>
                                                          <h3 class="course__title">
-                                                            <a href="#">Bercak Daun Cercospora</a>
+                                                            Bercak Daun Cercospora
                                                          </h3>
 
                                                          <div class="course__bottom d-sm-flex align-items-center justify-content-between">
@@ -94,134 +92,8 @@
                                                             </div>
                                                          </div>
                                                       </div>
-                                                      <div class="course__content-bottom d-flex justify-content-between align-items-center">
+                                                      <div class="course__content-bottom">
                                                         <span>Penyakit ini memiliki ciri-ciri yang berupa becak kecil pada daun dan berwarna coklat tua sampai yang mengumpul dengan jarak yang sama</span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
-                                             <div class="row gx-0">
-                                                <div class="col-xxl-4 col-xl-4 col-lg-4">
-                                                   <div class="course__thumb w-img p-relative fix">
-                                                      <a href="course-details.html">
-                                                         <img src="assets/img/layu-fusarium.jpg" alt="">
-                                                      </a>
-                                                   </div>
-                                                </div>
-                                                <div class="col-xxl-8 col-xl-8 col-lg-8">
-                                                   <div class="course__right p-relative">
-                                                      <div class="course__content p-relative">
-                                                         <div class="course__tag-2 purple-bg">
-                                                            <a href="#">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
-                                                         </div>
-                                                         <h3 class="course__title">
-                                                            <a href="#">Layu Fusarium</a>
-                                                         </h3>
-
-                                                         <div class="course__bottom d-sm-flex align-items-center justify-content-between">
-                                                            <div class="course__tutor">
-                                                               <a href="#"><img src="assets/img/course/tutor/course-tutor-1.jpg" alt="">Diagnosa</a>
-                                                            </div>
-                                                            <div class="course__lesson">
-                                                               <a href="#"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                  <path d="M1 12.2V4.49999C1 1.7 1.70588 1 4.52941 1H9.47059C12.2941 1 13 1.7 13 4.49999V11.5C13 11.598 13 11.696 12.9929 11.794" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M3.01176 10.0999H13V12.5498C13 13.9008 11.8918 14.9998 10.5294 14.9998H3.47059C2.10824 14.9998 1 13.9008 1 12.5498V12.0948C1 10.9959 1.90353 10.0999 3.01176 10.0999Z" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M4.17647 4.5H9.82353" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M4.17647 6.94995H7.70589" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  </svg>
-                                                                  Forward Chaining
-                                                               </a>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="course__content-bottom d-flex justify-content-between align-items-center">
-                                                        <span>Penyakit tersebut sangat berbahaya dan mematikan bagi tanaman pisang serta dapat menurunkan hasil dan kualitas. Nama lain penyakit layu Fusarium adalah penyakit Panama yang disebabkan oleh jamur. Penyakit ini sulit dikendalikan, mudah bermigrasi dan dapat bertahan hidup di dalam tanah dalam waktu yang lama</span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
-                                             <div class="row gx-0">
-                                                <div class="col-xxl-4 col-xl-4 col-lg-4">
-                                                   <div class="course__thumb w-img p-relative fix">
-                                                      <a href="course-details.html">
-                                                         <img src="assets/img/cordana.jpg" alt="">
-                                                      </a>
-                                                   </div>
-                                                </div>
-                                                <div class="col-xxl-8 col-xl-8 col-lg-8">
-                                                   <div class="course__right p-relative">
-                                                      <div class="course__content p-relative">
-                                                         <div class="course__tag-2 purple-bg">
-                                                            <a href="#">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
-                                                         </div>
-                                                         <h3 class="course__title">
-                                                            <a href="#">Bercak Daun Cordana</a>
-                                                         </h3>
-
-                                                         <div class="course__bottom d-sm-flex align-items-center justify-content-between">
-                                                            <div class="course__tutor">
-                                                               <a href="#"><img src="assets/img/course/tutor/course-tutor-1.jpg" alt="">Diagnosa</a>
-                                                            </div>
-                                                            <div class="course__lesson">
-                                                               <a href="#"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                  <path d="M1 12.2V4.49999C1 1.7 1.70588 1 4.52941 1H9.47059C12.2941 1 13 1.7 13 4.49999V11.5C13 11.598 13 11.696 12.9929 11.794" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M3.01176 10.0999H13V12.5498C13 13.9008 11.8918 14.9998 10.5294 14.9998H3.47059C2.10824 14.9998 1 13.9008 1 12.5498V12.0948C1 10.9959 1.90353 10.0999 3.01176 10.0999Z" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M4.17647 4.5H9.82353" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M4.17647 6.94995H7.70589" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  </svg>
-                                                                  Forward Chaining
-                                                               </a>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="course__content-bottom d-flex justify-content-between align-items-center">
-                                                        <span>Penyakit tersebut datang di sertai timbul becak-becak jorong atau bulat telur, kadang berbentuk berlian, kemudian membesar dan berwarna coklat pucat, dengan tepi yang berwarna coklat kemerahan</span>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
-                                             <div class="row gx-0">
-                                                <div class="col-xxl-4 col-xl-4 col-lg-4">
-                                                   <div class="course__thumb w-img p-relative fix">
-                                                      <a href="course-details.html">
-                                                         <img src="assets/img/burik.jpg" alt="">
-                                                      </a>
-                                                   </div>
-                                                </div>
-                                                <div class="col-xxl-8 col-xl-8 col-lg-8">
-                                                   <div class="course__right p-relative">
-                                                      <div class="course__content p-relative">
-                                                         <div class="course__tag-2 purple-bg">
-                                                            <a href="#">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
-                                                         </div>
-                                                         <h3 class="course__title">
-                                                            <a href="#">Burik</a>
-                                                         </h3>
-
-                                                         <div class="course__bottom d-sm-flex align-items-center justify-content-between">
-                                                            <div class="course__tutor">
-                                                               <a href="#"><img src="assets/img/course/tutor/course-tutor-1.jpg" alt="">Diagnosa</a>
-                                                            </div>
-                                                            <div class="course__lesson">
-                                                               <a href="#"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                  <path d="M1 12.2V4.49999C1 1.7 1.70588 1 4.52941 1H9.47059C12.2941 1 13 1.7 13 4.49999V11.5C13 11.598 13 11.696 12.9929 11.794" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M3.01176 10.0999H13V12.5498C13 13.9008 11.8918 14.9998 10.5294 14.9998H3.47059C2.10824 14.9998 1 13.9008 1 12.5498V12.0948C1 10.9959 1.90353 10.0999 3.01176 10.0999Z" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M4.17647 4.5H9.82353" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  <path d="M4.17647 6.94995H7.70589" stroke="#49535B" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                  </svg>
-                                                                  Forward Chaining
-                                                               </a>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                      <div class="course__content-bottom d-flex justify-content-between align-items-center">
-                                                        <span>Penyakit tersebut datang disertai berupa becak-becak kecil pada daun, berwarna coklat tua sampai hitam, yang mengumpul dengan jarak yang hampir sama</span>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -271,7 +143,7 @@
                               <h3 class="course__sidebar-title">Menu Lainnya</h3>
                               <ul>
                                     <li>
-                                       <a href="#">Home</a>
+                                       <a href="{{ route('home') }}">Home</a>
                                     </li>
                                     <li>
                                        <a href="#">About</a>
