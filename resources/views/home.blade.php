@@ -26,11 +26,6 @@
 
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div class="course__item-2 transition-3 white-bg mb-30 fix">
-                    <div class="course__thumb-2 w-img fix">
-                        <a href="#">
-                            <img src="assets/img/course/2/course-1.jpg" alt="">
-                        </a>
-                    </div>
                     <div class="course__content-2">
                         <h3 class="course__title-2 text-center">
                             <a href="{{ route('penyakit') }}">Daftar Penyakit</a>
@@ -44,14 +39,9 @@
 
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div class="course__item-2 transition-3 white-bg mb-30 fix">
-                    <div class="course__thumb-2 w-img fix">
-                        <a href="#">
-                            <img src="assets/img/course/2/course-1.jpg" alt="">
-                        </a>
-                    </div>
                     <div class="course__content-2">
                         <h3 class="course__title-2 text-center">
-                            <a href="#">Daftar Gejala</a>
+                            <a href="{{ route('gejala') }}">Daftar Gejala</a>
                         </h3>
                         <div class="course__bottom-2 d-flex align-items-center justify-content-between">
                             <span>Semua Data gejala yang telah dikumpulkan sesuai referensi dan data yang ada</span>

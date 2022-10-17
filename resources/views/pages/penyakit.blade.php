@@ -35,7 +35,7 @@
                               <div class="course__sort d-flex justify-content-sm-end">
                               <div class="course__sidebar-search">
                               <form action="#">
-                                 <input type="text" placeholder="Search for courses...">
+                                 <input type="text" placeholder="Search...">
                                  <button type="submit">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 584.4 584.4" style="enable-background:new 0 0 584.4 584.4;" xml:space="preserve">
                                        <g>
@@ -155,7 +155,7 @@
                                        <a href="#">About</a>
                                     </li>
                                     <li>
-                                       <a href="#">Daftar Gejala</a>
+                                       <a href="{{ route('gejala') }}">Daftar Gejala</a>
                                     </li>
                                  </ul>
                            </div>

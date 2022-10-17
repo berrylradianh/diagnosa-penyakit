@@ -39,10 +39,10 @@
                               <div class="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="#">Daftar Penyakit</a>
+                                       <a href="{{ route('penyakit') }}">Daftar Penyakit</a>
                                     </li>
                                     <li>
-                                       <a href="#">Daftar Gejala</a>
+                                       <a href="{{ route('gejala') }}">Daftar Gejala</a>
                                     </li>
                                  </ul>
                               </div>

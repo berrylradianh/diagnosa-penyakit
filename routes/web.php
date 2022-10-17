@@ -32,3 +32,7 @@ Route::get('penyakit', function () {
 Route::get('gejala', function () {
     return view('pages.gejala');
 }) -> name('gejala');
+
+Route::get('penyakit-detail', function () {
+    return view('pages.penyakit-detail');
+}) -> name('penyakit-detail');

@@ -35,7 +35,7 @@
                               <div class="course__sort d-flex justify-content-sm-end">
                               <div class="course__sidebar-search">
                               <form action="#">
-                                 <input type="text" placeholder="Search for courses...">
+                                 <input type="text" placeholder="Search...">
                                  <button type="submit">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 584.4 584.4" style="enable-background:new 0 0 584.4 584.4;" xml:space="preserve">
                                        <g>
@@ -59,21 +59,23 @@
                                  <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
                                     <div class="row">
                                        <div class="col-xxl-12">
-                                          <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
+                                       <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
                                              <div class="row gx-0">
                                                 <div class="col-xxl-4 col-xl-4 col-lg-4">
                                                    <div class="course__thumb w-img p-relative fix">
-                                                         <img src="assets/img/Cercospora.jpg" alt="">
+                                                      <a href="course-details.html">
+                                                         <img src="assets/img/layu-bakteri.jpg" alt="">
+                                                      </a>
                                                    </div>
                                                 </div>
                                                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                                                    <div class="course__right p-relative">
                                                       <div class="course__content p-relative">
-                                                         <div class="course__tag-2 purple-bg">
-                                                            <a href="{{ route('home') }}">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
+                                                      <div class="course__tag-2 purple-bg">
+                                                            <a href="#">Layu Bakteri</a>
                                                          </div>
                                                          <h3 class="course__title">
-                                                            Bercak Daun Cercospora
+                                                            <a href="#">Pada daun ke-3 dan ke-4 dari pucuk sebagai bintik-bintik memanjang, berwarna kuning pucat dengan ukuran panjang 12 mm atau lebih, arahnya sejajar dengan tulang daun</a>
                                                          </h3>
 
                                                          <div class="course__bottom d-sm-flex align-items-center justify-content-between">
@@ -91,9 +93,6 @@
                                                                </a>
                                                             </div>
                                                          </div>
-                                                      </div>
-                                                      <div class="course__content-bottom">
-                                                        <span>Penyakit ini memiliki ciri-ciri yang berupa becak kecil pada daun dan berwarna coklat tua sampai yang mengumpul dengan jarak yang sama</span>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -149,7 +148,7 @@
                                        <a href="#">About</a>
                                     </li>
                                     <li>
-                                       <a href="#">Daftar Penyakit</a>
+                                       <a href="{{ route('penyakit') }}">Daftar Penyakit</a>
                                     </li>
                                  </ul>
                            </div>
