@@ -24,3 +24,7 @@ Route::get('login', function () {
 Route::get('register', function () {
     return view('auth.register');
 }) -> name('register');
+
+Route::get('penyakit', function () {
+    return view('pages.penyakit');
+}) -> name('penyakit');

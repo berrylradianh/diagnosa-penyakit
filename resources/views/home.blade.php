@@ -33,7 +33,7 @@
                     </div>
                     <div class="course__content-2">
                         <h3 class="course__title-2 text-center">
-                            <a href="#">Daftar Penyakit</a>
+                            <a href="{{ route('penyakit') }}">Daftar Penyakit</a>
                         </h3>
                         <div class="course__bottom-2 d-flex align-items-center justify-content-between">
                             <span>Semua Data penyakit yang telah dikumpulkan sesuai referensi dan data yang ada</span>
