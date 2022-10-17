@@ -28,3 +28,7 @@ Route::get('register', function () {
 Route::get('penyakit', function () {
     return view('pages.penyakit');
 }) -> name('penyakit');
+
+Route::get('gejala', function () {
+    return view('pages.gejala');
+}) -> name('gejala');

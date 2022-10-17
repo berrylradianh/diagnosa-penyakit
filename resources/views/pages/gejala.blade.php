@@ -59,20 +59,21 @@
                                  <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
                                     <div class="row">
                                        <div class="col-xxl-12">
-                                       <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
+                                          <div class="course__item course__item-list course__item-list-2 white-bg mb-30 fix transition-3">
                                              <div class="row gx-0">
                                                 <div class="col-xxl-4 col-xl-4 col-lg-4">
                                                    <div class="course__thumb w-img p-relative fix">
-                                                      <a href="course-details.html">
-                                                         <img src="assets/img/layu-bakteri.jpg" alt="">
-                                                      </a>
+                                                         <img src="assets/img/Cercospora.jpg" alt="">
                                                    </div>
                                                 </div>
                                                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                                                    <div class="course__right p-relative">
                                                       <div class="course__content p-relative">
+                                                         <div class="course__tag-2 purple-bg">
+                                                            <a href="{{ route('home') }}">Diagnosa Penyakit Tanaman Pisang Forward Chaining</a>
+                                                         </div>
                                                          <h3 class="course__title">
-                                                            <a href="#">Layu Bakteri</a>
+                                                            Bercak Daun Cercospora
                                                          </h3>
 
                                                          <div class="course__bottom d-sm-flex align-items-center justify-content-between">
@@ -91,15 +92,8 @@
                                                             </div>
                                                          </div>
                                                       </div>
-                                                      <div class="course__content-bottom d-flex justify-content-between align-items-center">
-                                                      Penyakit ini ditandai dengan gejala...
-                                                         <div class="course__btn">
-                                                            <a href="#" class="link-btn-2">
-                                                               Read More
-                                                               <i class="far fa-arrow-right"></i>
-                                                               <i class="far fa-arrow-right"></i>
-                                                            </a>
-                                                         </div>
+                                                      <div class="course__content-bottom">
+                                                        <span>Penyakit ini memiliki ciri-ciri yang berupa becak kecil pada daun dan berwarna coklat tua sampai yang mengumpul dengan jarak yang sama</span>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -155,7 +149,7 @@
                                        <a href="#">About</a>
                                     </li>
                                     <li>
-                                       <a href="#">Daftar Gejala</a>
+                                       <a href="#">Daftar Penyakit</a>
                                     </li>
                                  </ul>
                            </div>
