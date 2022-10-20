@@ -1,4 +1,4 @@
-@extends('layouts.dashboard.app')
+@extends('layouts.dashboard.admin..app')
 
 @section('link')
     <link href="{{ ('dashboard/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
@@ -62,16 +62,6 @@
                                     </tr>
 
                                 </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>Email</th>
-                                        <th>Penyakit</th>
-                                        <th>Solusi</th>
-                                        <th>Tanggal Diagnosa</th>
-                                        <th></th>
-                                    </tr>
-                                </tfoot>
                             </table>
                         </div>
                     </div>

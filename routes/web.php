@@ -38,21 +38,67 @@ Route::get('penyakit-detail', function () {
 }) -> name('penyakit-detail');
 
 Route::get('dashboard-admin', function () {
-    return view('pages.admin.dashboard');
+    return view('pages.admin.dashboard', [
+        'title' => 'Dashboard | Diagnosa Penyakit'
+    ]);
 }) -> name('dashboard-admin');
 
 Route::get('users-admin', function () {
-    return view('pages.admin.users');
+    return view('pages.admin.users', [
+        'title' => 'Users | Diagnosa Penyakit'
+    ]);
 }) -> name('users-admin');
 
 Route::get('penyakit-admin', function () {
-    return view('pages.admin.penyakit');
+    return view('pages.admin.penyakit',[
+        'title' => 'Penyakit | Diagnosa Penyakit'
+    ]);
 }) -> name('penyakit-admin');
 
 Route::get('gejala-admin', function () {
-    return view('pages.admin.gejala');
+    return view('pages.admin.gejala', [
+        'title' => 'Gejala | Diagnosa Penyakit'
+    ]);
 }) -> name('gejala-admin');
 
 Route::get('hasil-admin', function () {
-    return view('pages.admin.hasil');
+    return view('pages.admin.hasil', [
+        'title' => 'Hasil | Diagnosa Penyakit'
+    ]);
 }) -> name('hasil-admin');
+
+Route::get('rule-admin', function () {
+    return view('pages.admin.rule', [
+        'title' => 'Rule | Diagnosa Penyakit'
+    ]);
+}) -> name('rule-admin');
+
+Route::get('dashboard-user', function () {
+    return view('pages.user.dashboard', [
+        'title' => 'Dashboard | Diagnosa Penyakit'
+    ]);
+}) -> name('dashboard-user');
+
+Route::get('users-user', function () {
+    return view('pages.user.users', [
+        'title' => 'Users | Diagnosa Penyakit'
+    ]);
+}) -> name('users-user');
+
+Route::get('penyakit-user', function () {
+    return view('pages.user.penyakit', [
+        'title' => 'Penyakit | Diagnosa Penyakit'
+    ]);
+}) -> name('penyakit-user');
+
+Route::get('gejala-user', function () {
+    return view('pages.user.gejala', [
+        'title' => 'Gejala | Diagnosa Penyakit'
+    ]);
+}) -> name('gejala-user');
+
+Route::get('hasil-user', function () {
+    return view('pages.user.hasil', [
+        'title' => 'Hasil | Diagnosa Penyakit'
+    ]);
+}) -> name('hasil-user');

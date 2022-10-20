@@ -1,4 +1,4 @@
-@extends('layouts.dashboard.admin..app')
+@extends('layouts.dashboard.user.app')
 
 @section('link')
     <link href="{{ ('dashboard/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
@@ -24,7 +24,7 @@
 
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                         <div class="widget-content widget-content-area br-6">
-                            Welcome Admin
+                            Welcome Ahmad Subagyo
                         </div>
                     </div>
 
