@@ -37,6 +37,10 @@ Route::get('penyakit-detail', function () {
     return view('pages.penyakit-detail');
 }) -> name('penyakit-detail');
 
+Route::get('diagnosa',function(){
+    return view('pages.diagnosa');
+});
+
 Route::get('dashboard-admin', function () {
     return view('pages.admin.dashboard', [
         'title' => 'Dashboard | Diagnosa Penyakit'
