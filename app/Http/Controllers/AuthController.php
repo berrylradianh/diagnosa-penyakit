@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -33,5 +34,22 @@ class AuthController extends Controller
         }
 
         return back()->with('failed', 'User or password does not match!');
+    }
+
+    public function register(Request $request)
+    {
+        $user = User::where('email', $request->email)->first();
+        if ($user == true) {
+            session()->flash('success', ' Email sudah pernah terdaftar, silakan Login!');
+            return redirect('login');
+        } else {
+            User::create([
+                'name' => $request->fullname,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+                'role' => 'petani'
+            ]);
+            return redirect('login');
+        }
     }
 }

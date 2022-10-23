@@ -23,6 +23,7 @@ Route::get('login', function () {
 })->name('login');
 Route::post('login', [AuthController::class, 'login'])->name('login.login');
 
+Route::post('register', [AuthController::class, 'register'])->name('register.register');
 Route::get('register', function () {
     return view('auth.register');
 })->name('register');
