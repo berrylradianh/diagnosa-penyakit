@@ -18,11 +18,13 @@
             <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                 <div class="sign__wrapper white-bg">
                     <div class="sign__form">
-                        <form id="login" action="#">
+                        <form id="login" action="{{ route('login.login') }}" method="post">
+                            @csrf
+
                             <div class="sign__input-wrapper mb-25">
                                 <h5>Email</h5>
                                 <div class="sign__input">
-                                    <input id="email" type="text" placeholder="e-mail address" required>
+                                    <input name="email" id="email" type="text" placeholder="e-mail address" required>
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <span id="email_validation" class="text-danger"></span>
@@ -31,7 +33,7 @@
                             <div class="sign__input-wrapper mb-10">
                                 <h5>Password</h5>
                                 <div class="sign__input">
-                                    <input id="input_password" type="password" placeholder="Password" required>
+                                    <input name="password" id="input_password" type="password" placeholder="Password" required>
                                     <i class="fal fa-lock"></i>
                                     <i class="fal fa-eye" style="margin-left: 80%;" id="eye" onclick="toggle()"></i>
                                 </div>
@@ -44,7 +46,7 @@
                                 </div>
                             </div>
 
-                            <button class="tp-btn  w-100"> <span></span> Login</button>
+                            <button class="tp-btn  w-100" type="submit"> <span></span> Login</button>
 
                             <div class="sign__new text-center mt-20">
                                 <p>Tidak punya akun? <a href="{{route('register')}}">Register</a></p>
@@ -96,7 +98,7 @@
             $('#password_validation').text('');
         } else {
             event.preventDefault();
-            $('#password_validation').text('The password must consist of at least 8 characters, 1 capital letter, 1 lowercase letter, 1 number, and no special characters ');
+            $('#password_validation').text('The password must consist of at least 8 characters, 1 capital letter, 1 lowercase letter and 1 number');
             return false;
         }
     });

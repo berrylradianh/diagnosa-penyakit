@@ -24,7 +24,7 @@
 
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                 <div class="widget-content widget-content-area br-6">
-                    Welcome Admin
+                    Welcome {{ auth()->user()?->name }}
                 </div>
             </div>
 
@@ -47,6 +47,15 @@
     });
 </script>
 <script src="{{ ('dashboard/assets/js/custom.js') }}"></script>
+<!-- END GLOBAL MANDATORY SCRIPTS -->
+
+<script>
+    $(document).ready(function() {
+        App.init();
+    });
+</script>
+<script src="{{ ('dashboard/assets/js/custom.js') }}">
+</script>
 <!-- END GLOBAL MANDATORY SCRIPTS -->
 
 <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
