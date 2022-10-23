@@ -21,7 +21,7 @@
         <div class="row layout-top-spacing">
 
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-                <form action="" style="margin-bottom: 5px; margin-left: 3px ;">
+                <form action="" method="POST" style="margin-bottom: 5px; margin-left: 3px ;">
                     <button class="btn btn-success btn-sm">Create</button>
                 </form>
                 <div class="widget-content widget-content-area br-6">

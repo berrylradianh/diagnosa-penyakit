@@ -34,7 +34,7 @@
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                             <div class="course__sort d-flex justify-content-sm-end">
                                 <div class="course__sidebar-search">
-                                    <form action="#">
+                                    <form action="#" method="POST">
                                         <input type="text" placeholder="Search...">
                                         <button type="submit">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 584.4 584.4" style="enable-background:new 0 0 584.4 584.4;" xml:space="preserve">

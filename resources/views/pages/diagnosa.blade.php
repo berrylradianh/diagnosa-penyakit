@@ -2,7 +2,7 @@
 
 @section('content')
 <center>
-    <form class="col-6 ml-105 mr-105 mb-10" method="GET" action="#">
+    <form class="col-6 ml-105 mr-105 mb-10" method="POST" action="#">
         <div class="input-group mb-1">
             <div class="input-group-prepend">
                 <div class="input-group-text mt-1">

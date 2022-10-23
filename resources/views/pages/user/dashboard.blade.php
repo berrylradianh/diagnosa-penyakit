@@ -18,19 +18,19 @@
 
 @section('content')
 <div id="content" class="main-content">
-  <div class="layout-px-spacing">
+    <div class="layout-px-spacing">
 
-    <div class="row layout-top-spacing">
+        <div class="row layout-top-spacing">
 
-      <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-        <div class="widget-content widget-content-area br-6">
-          Welcome {{ auth()->user()?->name }}
+            <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                <div class="widget-content widget-content-area br-6">
+                    Welcome {{ auth()->user()?->name }}
+                </div>
+            </div>
+
         </div>
-      </div>
 
     </div>
-
-  </div>
 </div>
 @endsection
 
@@ -42,10 +42,9 @@
 <script src="{{ ('dashboard/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
 <script src="{{ ('dashboard/assets/js/app.js') }}"></script>
 <script>
-  $(document).ready(function() {
-    App.init();
-  });
-
+    $(document).ready(function() {
+        App.init();
+    });
 </script>
 <script src="{{ ('dashboard/assets/js/custom.js') }}"></script>
 <!-- END GLOBAL MANDATORY SCRIPTS -->
