@@ -31,7 +31,7 @@
                             <div class="sign__input-wrapper mb-10">
                                 <h5>Password</h5>
                                 <div class="sign__input">
-                                    <input id = "input_password" type="password" placeholder="Password" required>
+                                    <input id="input_password" type="password" placeholder="Password" required>
                                     <i class="fal fa-lock"></i>
                                     <i class="fal fa-eye" style="margin-left: 80%;" id="eye" onclick="toggle()"></i>
                                 </div>
@@ -80,10 +80,10 @@
 
 
     // Form Validation email
-    $('#login').submit(function(event){
-        if($('#email').val().match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/gm)){
+    $('#login').submit(function(event) {
+        if ($('#email').val().match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/gm)) {
             $('#email_validation').text('');
-        }else{
+        } else {
             event.preventDefault();
             $('#email_validation').text('Invalid Email Address');
             return false;
@@ -91,12 +91,12 @@
     });
 
     // Form Validation password
-    $('#login').submit(function(event){
-        if($('#input_password').val().match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/)){
+    $('#login').submit(function(event) {
+        if ($('#input_password').val().match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/)) {
             $('#password_validation').text('');
-        }else{
+        } else {
             event.preventDefault();
-            $('#password_validation').text('The password must consist of at least 8 characters, 1 capital letter, 1 lowercase letter and 1 number');
+            $('#password_validation').text('The password must consist of at least 8 characters, 1 capital letter, 1 lowercase letter, 1 number, and no special characters ');
             return false;
         }
     });

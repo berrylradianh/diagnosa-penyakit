@@ -37,7 +37,7 @@ Route::get('penyakit-detail', function () {
     return view('pages.penyakit-detail');
 })->name('penyakit-detail');
 
-Route::get('diagnosa',function(){
+Route::get('diagnosa', function () {
     return view('pages.diagnosa');
 });
 
@@ -106,3 +106,21 @@ Route::get('hasil-user', function () {
         'title' => 'Hasil | Diagnosa Penyakit'
     ]);
 })->name('hasil-user');
+
+Route::get('create-penyakit', function () {
+    return view('pages.admin.create-penyakit', [
+        'title' => 'Penyakit | Diagnosa Penyakit'
+    ]);
+});
+
+Route::get('view-penyakit', function () {
+    return view('pages.admin.view-penyakit', [
+        'title' => 'Penyakit | Diagnosa Penyakit'
+    ]);
+});
+
+Route::get('create-gejala', function () {
+    return view('pages.admin.create-gejala', [
+        'title' => 'Gejala | Diagnosa Penyakit'
+    ]);
+});
