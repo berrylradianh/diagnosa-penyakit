@@ -18,13 +18,17 @@ class AuthController extends Controller
             // TODO: check password is valid
             if (password_verify($request->password, $user->password)) {
                 // TODO: set authenticated user
-                Auth::attempt($user->toArray());
+                // Auth::attempt($user->toArray());
+                Auth::attempt($request->only('email', 'password'));
+
+                session($user->toArray());
 
                 // TODO: chek user role
                 return $user->role == 'admin'
                     ? to_route('dashboard-admin')
                     : to_route('dashboard-user');
             }
+
             return back()->with('failed', 'Wrong password');
         }
 
