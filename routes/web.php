@@ -15,90 +15,90 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-}) -> name('home');
+})->name('home');
 
 Route::get('login', function () {
     return view('auth.login');
-}) -> name('login');
+})->name('login');
 
 Route::get('register', function () {
     return view('auth.register');
-}) -> name('register');
+})->name('register');
 
 Route::get('penyakit', function () {
     return view('pages.penyakit');
-}) -> name('penyakit');
+})->name('penyakit');
 
 Route::get('gejala', function () {
     return view('pages.gejala');
-}) -> name('gejala');
+})->name('gejala');
 
 Route::get('penyakit-detail', function () {
     return view('pages.penyakit-detail');
-}) -> name('penyakit-detail');
+})->name('penyakit-detail');
 
 Route::get('dashboard-admin', function () {
     return view('pages.admin.dashboard', [
         'title' => 'Dashboard | Diagnosa Penyakit'
     ]);
-}) -> name('dashboard-admin');
+})->name('dashboard-admin');
 
 Route::get('users-admin', function () {
     return view('pages.admin.users', [
         'title' => 'Users | Diagnosa Penyakit'
     ]);
-}) -> name('users-admin');
+})->name('users-admin');
 
 Route::get('penyakit-admin', function () {
-    return view('pages.admin.penyakit',[
+    return view('pages.admin.penyakit', [
         'title' => 'Penyakit | Diagnosa Penyakit'
     ]);
-}) -> name('penyakit-admin');
+})->name('penyakit-admin');
 
 Route::get('gejala-admin', function () {
     return view('pages.admin.gejala', [
         'title' => 'Gejala | Diagnosa Penyakit'
     ]);
-}) -> name('gejala-admin');
+})->name('gejala-admin');
 
 Route::get('hasil-admin', function () {
     return view('pages.admin.hasil', [
         'title' => 'Hasil | Diagnosa Penyakit'
     ]);
-}) -> name('hasil-admin');
+})->name('hasil-admin');
 
 Route::get('rule-admin', function () {
     return view('pages.admin.rule', [
         'title' => 'Rule | Diagnosa Penyakit'
     ]);
-}) -> name('rule-admin');
+})->name('rule-admin');
 
 Route::get('dashboard-user', function () {
     return view('pages.user.dashboard', [
         'title' => 'Dashboard | Diagnosa Penyakit'
     ]);
-}) -> name('dashboard-user');
+})->name('dashboard-user');
 
 Route::get('users-user', function () {
     return view('pages.user.users', [
         'title' => 'Users | Diagnosa Penyakit'
     ]);
-}) -> name('users-user');
+})->name('users-user');
 
 Route::get('penyakit-user', function () {
     return view('pages.user.penyakit', [
         'title' => 'Penyakit | Diagnosa Penyakit'
     ]);
-}) -> name('penyakit-user');
+})->name('penyakit-user');
 
 Route::get('gejala-user', function () {
     return view('pages.user.gejala', [
         'title' => 'Gejala | Diagnosa Penyakit'
     ]);
-}) -> name('gejala-user');
+})->name('gejala-user');
 
 Route::get('hasil-user', function () {
     return view('pages.user.hasil', [
         'title' => 'Hasil | Diagnosa Penyakit'
     ]);
-}) -> name('hasil-user');
+})->name('hasil-user');
