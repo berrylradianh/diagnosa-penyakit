@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Diagnosa;
 use App\Models\Gejala;
 use App\Models\PercobaanHasGejala;
 use Illuminate\Http\Request;
@@ -31,5 +32,14 @@ class DiagnosaController extends Controller
                 $key_percobaan = $key;
             }
         }
+
+        if (!is_null($key_percobaan)) {
+            Diagnosa::create([
+                'user_id' => $request->user()?->id,
+                'kode_percobaan' => $key_percobaan,
+            ]);
+        }
+
+        return back();
     }
 }
