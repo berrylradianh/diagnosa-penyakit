@@ -1,4 +1,4 @@
-@extends('layouts.dashboard.admin..app')
+@extends('layouts.dashboard.user..app')
 
 @section('link')
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
