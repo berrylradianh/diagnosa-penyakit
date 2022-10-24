@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\GejalaController;
 use App\Http\Controllers\PenyakitController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,10 +36,10 @@ Route::get('penyakit', [PenyakitController::class, 'index'])->name('penyakit');
 //     return view('pages.penyakit');
 // })->name('penyakit');
 Route::get('penyakit/{penyakits}', [PenyakitController::class, 'show'])->name('penyakit-detail');
-
-Route::get('gejala', function () {
-    return view('pages.gejala');
-})->name('gejala');
+Route::get('gejala', [GejalaController::class, 'index'])->name('gejala');
+// Route::get('gejala', function () {
+//     return view('pages.gejala');
+// })->name('gejala');
 
 // Route::get('penyakit-detail', function () {
 //     return view('pages.penyakit-detail');
