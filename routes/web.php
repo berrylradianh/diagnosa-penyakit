@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PenyakitController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,17 +30,19 @@ Route::get('register', function () {
     return view('auth.register');
 })->name('register');
 
-Route::get('penyakit', function () {
-    return view('pages.penyakit');
-})->name('penyakit');
+Route::get('penyakit', [PenyakitController::class, 'index'])->name('penyakit');
+// Route::get('penyakit', function () {
+//     return view('pages.penyakit');
+// })->name('penyakit');
+Route::get('penyakit/{penyakits}', [PenyakitController::class, 'show'])->name('penyakit-detail');
 
 Route::get('gejala', function () {
     return view('pages.gejala');
 })->name('gejala');
 
-Route::get('penyakit-detail', function () {
-    return view('pages.penyakit-detail');
-})->name('penyakit-detail');
+// Route::get('penyakit-detail', function () {
+//     return view('pages.penyakit-detail');
+// })->name('penyakit-detail');
 
 Route::get('diagnosa', function () {
     return view('pages.diagnosa');
