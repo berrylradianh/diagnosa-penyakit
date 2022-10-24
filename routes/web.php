@@ -7,6 +7,7 @@ use App\Http\Controllers\GejalaController;
 use App\Http\Controllers\PenyakitController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\UsersAdminController;
+use App\Http\Controllers\DiagnosaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,9 +49,11 @@ Route::get('gejala', [GejalaController::class, 'index'])->name('gejala');
 //     return view('pages.penyakit-detail');
 // })->name('penyakit-detail');
 
-Route::get('diagnosa', function () {
-    return view('pages.diagnosa');
-})->name('diagnosa');
+Route::get('diagnosa', [DiagnosaController::class, 'index'])->name('diagnosa');
+Route::post('diagnosa', [DiagnosaController::class, 'store'])->name('diagnosa.store');
+// Route::get('diagnosa', function () {
+//     return view('pages.diagnosa');
+// })->name('diagnosa');
 
 Route::get('dashboard-admin', function () {
     return view('pages.admin.dashboard', [
