@@ -9,6 +9,7 @@ use App\Http\Controllers\PenyakitController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\UsersAdminController;
 use App\Http\Controllers\user\GejalaUserController;
+use App\Http\Controllers\user\PenyakitUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -106,11 +107,12 @@ Route::get('users-user', function () {
     ]);
 })->name('users-user');
 
-Route::get('penyakit-user', function () {
-    return view('pages.user.penyakit', [
-        'title' => 'Penyakit | Diagnosa Penyakit'
-    ]);
-})->name('penyakit-user');
+// Route::get('penyakit-user', function () {
+//     return view('pages.user.penyakit', [
+//         'title' => 'Penyakit | Diagnosa Penyakit'
+//     ]);
+// })->name('penyakit-user');
+Route::get('penyakit-user', [PenyakitUserController::class, 'index'])->name('penyakit-user');
 
 // Route::get('gejala-user', function () {
 //     return view('pages.user.gejala', [

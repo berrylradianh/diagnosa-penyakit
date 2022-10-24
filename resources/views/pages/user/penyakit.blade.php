@@ -33,14 +33,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($penyakits as $key => $penyakits )
                             <tr class="text-center">
-                                <td>Layu Fusarium</td>
-                                <td><img src="{{('assets/img/layu-fusarium.jpg')}}" alt="" width="40%"></td>
-                                <td>hindari menanam tanaman yang...</td>
-                                <td>hindari menanam tanaman yang...</td>
+                                <td>{{ $penyakits->nama }}</td>
+                                <td><img src="{{$penyakits->url}}" alt="" width="40%"></td>
+                                <td>{{ Str::words($penyakits->keterangan,4) }}</td>
+                                <td>{{ Str::words($penyakits->solusi,4) }}</td>
                                 <td class="text-center"><button class="btn btn-primary btn-sm">View</button></td>
                             </tr>
-
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
