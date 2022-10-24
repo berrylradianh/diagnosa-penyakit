@@ -14,7 +14,7 @@
     </div>
 
     <div class="container text-center p-lg-5">
-        <a href="#" class="btn btn-lg btn-info w-auto ">Mulai</a>
+        <a href="{{ route ('diagnosa') }}" class="btn btn-lg btn-info w-auto ">Mulai</a>
     </div>
 </section>
 <!-- breadcrumb area end -->
