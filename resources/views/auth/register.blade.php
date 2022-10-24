@@ -32,7 +32,7 @@
                             <div class="sign__input-wrapper mb-25">
                                 <h5>Email</h5>
                                 <div class="sign__input">
-                                    <input name="email" id="email_registration" type="text" placeholder="e-mail address" required>
+                                    <input name="email" id="email_registration" type="text" placeholder="E-mail address" required>
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <span class="text-danger" id="email_validation_register"></span>
@@ -51,7 +51,7 @@
                             <div class="sign__input-wrapper mb-10">
                                 <h5>Password Confirm</h5>
                                 <div class="sign__input">
-                                    <input name="password_confirm" id="input_password_confirm" type="password" placeholder="Re-Password" required>
+                                    <input name="password_confirm" id="input_password_confirm" type="password" placeholder="Confirm Password" required>
                                     <i class="fal fa-lock"></i>
                                     <i class="fal fa-eye" style="margin-left: 80%;" id="eye_confirm" onclick="toggle_password_confirm()"></i>
                                 </div>
