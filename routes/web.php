@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\GejalaAdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GejalaController;
 use App\Http\Controllers\PenyakitController;
@@ -67,11 +68,12 @@ Route::get('penyakit-admin', function () {
     ]);
 })->name('penyakit-admin');
 
-Route::get('gejala-admin', function () {
-    return view('pages.admin.gejala', [
-        'title' => 'Gejala | Diagnosa Penyakit'
-    ]);
-})->name('gejala-admin');
+Route::get('gejala-admin', [GejalaAdminController::class, 'index'])->name('gejala-admin');
+// Route::get('gejala-admin', function () {
+//     return view('pages.admin.gejala', [
+//         'title' => 'Gejala | Diagnosa Penyakit'
+//     ]);
+// })->name('gejala-admin');
 
 Route::get('hasil-admin', function () {
     return view('pages.admin.hasil', [
