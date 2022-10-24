@@ -15,7 +15,6 @@ class GejalaSeeder extends Seeder
      */
     public function run()
     {
-        //
         Gejala::insert(
             [
                 [
