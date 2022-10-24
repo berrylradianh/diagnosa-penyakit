@@ -47,7 +47,7 @@ Route::get('gejala', [GejalaController::class, 'index'])->name('gejala');
 
 Route::get('diagnosa', function () {
     return view('pages.diagnosa');
-});
+})->name('diagnosa');
 
 Route::get('dashboard-admin', function () {
     return view('pages.admin.dashboard', [
