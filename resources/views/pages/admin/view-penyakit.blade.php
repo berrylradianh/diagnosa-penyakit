@@ -3,18 +3,18 @@
 @section('link')
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-<link href="{{ ('dashboard/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ ('dashboard/assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset ('dashboard/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset ('dashboard/assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
 <!-- END GLOBAL MANDATORY STYLES -->
 
 <!-- BEGIN PAGE LEVEL STYLES -->
-<link rel="stylesheet" type="text/css" href="{{ ('dashboard/plugins/table/datatable/datatables.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ ('dashboard/plugins/table/datatable/dt-global_style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset ('dashboard/plugins/table/datatable/datatables.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset ('dashboard/plugins/table/datatable/dt-global_style.css') }}">
 
 <!--  BEGIN CUSTOM STYLE FILE  -->
-<link href="{{ ('assets/css/scrollspyNav.css') }}" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="{{ ('assets/css/forms/theme-checkbox-radio.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ ('assets/css/forms/switches.css') }}">
+<link href="{{ asset ('dashboard/assets/css/scrollspyNav.css') }}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ asset ('dashboard/assets/css/forms/theme-checkbox-radio.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset ('dashboard/assets/css/forms/switches.css') }}">
 <!--  END CUSTOM STYLE FILE  -->
 @endsection
 
@@ -32,19 +32,16 @@
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Detail Penyakit</h4>
+                                        <h4>{{$penyakits->nama}}</h4>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="widget-content-area">
                                 <div class="postbox__content">
-                                    <div class="postbox__text mb-40 ml-1 mt-1">
-                                        <img src="{{('assets/img/layu-fusarium.jpg')}}" alt="" width="10%">
-                                    </div>
-                                    <h3 class="postbox__title">Layu Fusarium</h3>
-                                    <div class="postbox__text mb-40 ml-1">
-                                        <p class="text-left">Penyakit Panama yang disebabkan oleh jamur. Penyakit ini sulit dikendalikan, mudah bermigrasi dan dapat bertahan hidup di dalam tanah dalam waktu yang lama. hindari menanam tanaman yang terinfeksi di daerah yang terkena jamur patogen, mengurangi insiden cedera akar dengan mengendalikan nematoda dengan nematisida</p>
+                                    <div class="postbox__text mb-40 ml-2">
+                                        <p class="text-left">{{$penyakits->keterangan}}</p>
+                                        <p class="text-left">{{$penyakits->solusi}}</p>
                                     </div>
                                 </div>
 

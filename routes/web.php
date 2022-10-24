@@ -75,6 +75,13 @@ Route::get('users-admin', [UsersAdminController::class, 'index'])->name('users-a
 // })->name('penyakit-admin');
 Route::get('penyakit-admin', [PenyakitAdminController::class, 'index'])->name('penyakit-admin');
 
+// Route::get('view-penyakit-admin', function () {
+//     return view('pages.admin.view-penyakit', [
+//         'title' => 'Penyakit | Diagnosa Penyakit'
+//     ]);
+// })->name('view-penyakit-admin');
+Route::get('view-penyakit-admin/{penyakits}', [PenyakitAdminController::class, 'show'])->name('view-penyakit-admin');
+
 Route::get('gejala-admin', [GejalaAdminController::class, 'index'])->name('gejala-admin');
 // Route::get('gejala-admin', function () {
 //     return view('pages.admin.gejala', [

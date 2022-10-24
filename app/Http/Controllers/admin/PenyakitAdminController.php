@@ -16,4 +16,10 @@ class PenyakitAdminController extends Controller
 
         return view('pages.admin.penyakit', compact('title', 'penyakits'));
     }
+
+    public function show(Penyakit $penyakits)
+    {
+        $title = 'Penyakit | Diagnosa Penyakit';
+        return view('pages.admin.view-penyakit', compact('penyakits', 'title'));
+    }
 }
