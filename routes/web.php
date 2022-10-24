@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\UsersAdminController;
 use App\Http\Controllers\DiagnosaController;
 use App\Http\Controllers\user\GejalaUserController;
+use App\Http\Controllers\user\HasilUserController;
 use App\Http\Controllers\user\PenyakitUserController;
 
 /*
@@ -135,11 +136,12 @@ Route::get('view-penyakit-user/{penyakits}', [PenyakitUserController::class, 'sh
 // })->name('gejala-user');
 Route::get('gejala-user', [GejalaUserController::class, 'index'])->name('gejala-user');
 
-Route::get('hasil-user', function () {
-    return view('pages.user.hasil', [
-        'title' => 'Hasil | Diagnosa Penyakit'
-    ]);
-})->name('hasil-user');
+// Route::get('hasil-user', function () {
+//     return view('pages.user.hasil', [
+//         'title' => 'Hasil | Diagnosa Penyakit'
+//     ]);
+// })->name('hasil-user');
+Route::get('hasil-user', [HasilUserController::class, 'index'])->name('hasil-user');
 
 Route::get('create-penyakit', function () {
     return view('pages.admin.create-penyakit', [
