@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Percobaan extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'kode',
+        'hasil'
+    ];
 }

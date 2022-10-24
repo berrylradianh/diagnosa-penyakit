@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('percobaans', function (Blueprint $table) {
             $table->id();
+            $table->string('kode')->unique()->nullable();
+            $table->string('hasil')->nullable();
             $table->timestamps();
         });
     }
