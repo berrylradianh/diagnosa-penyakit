@@ -39,7 +39,7 @@
                                 <td><img src="{{$penyakits->url}}" alt="" width="40%"></td>
                                 <td>{{ Str::words($penyakits->keterangan,4) }}</td>
                                 <td>{{ Str::words($penyakits->solusi,4) }}</td>
-                                <td class="text-center"><button class="btn btn-primary btn-sm">View</button></td>
+                                <td class="text-center"><a href="{{ url('view-penyakit-user/'.$penyakits->id) }}"><button class="btn btn-primary btn-sm">View</button></a></td>
                             </tr>
                             @endforeach
                         </tbody>

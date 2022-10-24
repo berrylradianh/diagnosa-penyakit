@@ -121,6 +121,8 @@ Route::get('users-user', function () {
 // })->name('penyakit-user');
 Route::get('penyakit-user', [PenyakitUserController::class, 'index'])->name('penyakit-user');
 
+Route::get('view-penyakit-user/{penyakits}', [PenyakitUserController::class, 'show'])->name('view-penyakit-user');
+
 // Route::get('gejala-user', function () {
 //     return view('pages.user.gejala', [
 //         'title' => 'Gejala | Diagnosa Penyakit'

@@ -16,4 +16,10 @@ class PenyakitUserController extends Controller
 
         return view('pages.user.penyakit', compact('title', 'penyakits'));
     }
+
+    public function show(Penyakit $penyakits)
+    {
+        $title = 'Penyakit | Diagnosa Penyakit';
+        return view('pages.user.view-penyakit', compact('penyakits', 'title'));
+    }
 }
