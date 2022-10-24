@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('percobaan_has_gejalas', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_percobaan')->nullable();
+            $table->string('kode_gejala')->nullable();
             $table->timestamps();
         });
     }

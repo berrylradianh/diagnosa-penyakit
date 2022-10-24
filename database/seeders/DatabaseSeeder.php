@@ -31,7 +31,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             PenyakitSeeder::class,
-            GejalaSeeder::class
+            GejalaSeeder::class,
+            PercobaanSeeder::class,
+            PercobaanHasGejalaSeeder::class,
         ]);
     }
 }

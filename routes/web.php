@@ -1,10 +1,12 @@
 <?php
 
-use App\Http\Controllers\admin\UsersAdminController;
+use App\Http\Controllers\admin\GejalaAdminController;
+use App\Http\Controllers\admin\RuleAdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GejalaController;
 use App\Http\Controllers\PenyakitController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\admin\UsersAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,11 +71,12 @@ Route::get('penyakit-admin', function () {
     ]);
 })->name('penyakit-admin');
 
-Route::get('gejala-admin', function () {
-    return view('pages.admin.gejala', [
-        'title' => 'Gejala | Diagnosa Penyakit'
-    ]);
-})->name('gejala-admin');
+Route::get('gejala-admin', [GejalaAdminController::class, 'index'])->name('gejala-admin');
+// Route::get('gejala-admin', function () {
+//     return view('pages.admin.gejala', [
+//         'title' => 'Gejala | Diagnosa Penyakit'
+//     ]);
+// })->name('gejala-admin');
 
 Route::get('hasil-admin', function () {
     return view('pages.admin.hasil', [
@@ -81,11 +84,12 @@ Route::get('hasil-admin', function () {
     ]);
 })->name('hasil-admin');
 
-Route::get('rule-admin', function () {
-    return view('pages.admin.rule', [
-        'title' => 'Rule | Diagnosa Penyakit'
-    ]);
-})->name('rule-admin');
+Route::get('rule-admin', [RuleAdminController::class, 'index'])->name('rule-admin');
+// Route::get('rule-admin', function () {
+//     return view('pages.admin.rule', [
+//         'title' => 'Rule | Diagnosa Penyakit'
+//     ]);
+// })->name('rule-admin');
 
 Route::get('dashboard-user', function () {
     return view('pages.user.dashboard', [
