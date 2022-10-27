@@ -21,9 +21,6 @@
         <div class="row layout-top-spacing">
 
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-                <form action="" method="POST" style="margin-bottom: 5px; margin-left: 3px ;">
-                    <button class="btn btn-success btn-sm">Create</button>
-                </form>
                 <div class="widget-content widget-content-area br-6">
                     <table id="zero-config" class="table dt-table-hover text-center" style="width:100%">
                         <thead>
@@ -42,7 +39,7 @@
                                 <td><img src="{{$penyakits->url}}" alt="" width="40%"></td>
                                 <td>{{ Str::words($penyakits->keterangan,4) }}</td>
                                 <td>{{ Str::words($penyakits->solusi,4) }}</td>
-                                <td class="text-center"><a href="{{ url('view-penyakit-admin/'.$penyakits->id) }}"><button class="btn btn-primary btn-sm">View</button> <button class="btn btn-danger btn-sm">Delete</button></a>
+                                <td class="text-center"><a href="{{ url('view-penyakit-admin/'.$penyakits->id) }}"><button class="btn btn-primary btn-sm">View</button></a>
                                 </td>
                             </tr>
                             @endforeach

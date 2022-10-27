@@ -30,49 +30,18 @@
                                 <th>Penyakit</th>
                                 <th>Solusi</th>
                                 <th>Tanggal Diagnosa</th>
-                                <th class="no-content">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($diagnosas as $diagnosa)
                             <tr>
-                                <td>Ahmad Subagyo</td>
-                                <td>ahmadsubagyo@gmail.com</td>
-                                <td>Bercak Daun Cercospora</td>
-                                <td>Tidak mengusahakan pisang...</td>
-                                <td>18 May 2022</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
+                                <td>{{ $diagnosa->user?->name }}</td>
+                                <td>{{ $diagnosa->user?->email }}</td>
+                                <td>{{ $diagnosa->percobaan?->hasil }}</td>
+                                <td>{{ $diagnosa->solusi }}</td>
+                                <td>{{ $diagnosa->created_at->diffForHumans() }}</td>
                             </tr>
-
-                            <tr>
-                                <td>Ahmad Sudrajad</td>
-                                <td>ahmadsudrajad@gmail.com</td>
-                                <td>Burik</td>
-                                <td>Tanaman pisang dibersihkan dari daun-daun...</td>
-                                <td>18 Oct 2022</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-
-                            <tr>
-                                <td>Lala Kumalaningsih</td>
-                                <td>lala@gmail.com</td>
-                                <td>Layu Bakteri</td>
-                                <td>sanitasi lahan yaitu disarankan tidak melakukan...</td>
-                                <td>18 Des 2022</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
