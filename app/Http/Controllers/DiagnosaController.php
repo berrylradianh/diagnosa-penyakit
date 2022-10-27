@@ -35,7 +35,7 @@ class DiagnosaController extends Controller
 
         if (!is_null($key_percobaan)) {
             Diagnosa::create([
-                'user_id' => $request->user()?->id,
+                'user_id' => auth()->check() ? auth()->id() : '0',
                 'kode_percobaan' => $key_percobaan,
             ]);
         }
