@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 <li class="nav-item theme-text">
-                    <a href="index.html" class="nav-link"> Diagnosa Penyakit Pisang - Forward Chaining </a>
+                    <a href="{{ route ('dashboard-user') }}" class="nav-link"> Diagnosa Penyakit Pisang - Forward Chaining </a>
                 </li>
             </ul>
 
