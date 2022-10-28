@@ -40,6 +40,12 @@
                                 <td>{{ Str::words($penyakits->keterangan,4) }}</td>
                                 <td>{{ Str::words($penyakits->solusi,4) }}</td>
                                 <td class="text-center"><a href="{{ url('view-penyakit-admin/'.$penyakits->id) }}"><button class="btn btn-primary btn-sm">View</button></a>
+                                    <!-- <a href="{{ route('penyakit-admin.destroy', $penyakits->id) }}"><button class="ml-1 btn btn-danger btn-sm">Delete</button></a> -->
+                                    <form action="{{ route('penyakit-admin.destroy', $penyakits->id) }}" method="POST" class="mt-2">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-sm btn-danger btn-icon "><i class="fas fa-times"></i> Delete </button>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach

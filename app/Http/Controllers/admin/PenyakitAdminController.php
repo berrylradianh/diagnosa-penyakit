@@ -22,4 +22,10 @@ class PenyakitAdminController extends Controller
         $title = 'Penyakit | Diagnosa Penyakit';
         return view('pages.admin.view-penyakit', compact('penyakits', 'title'));
     }
+
+    public function destroy($id)
+    {
+        $penyakits = Penyakit::where('id', $id)->firstorfail()->delete();
+        return redirect()->route('penyakit-admin.index');
+    }
 }

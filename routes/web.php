@@ -78,7 +78,7 @@ Route::get('users-admin', [UsersAdminController::class, 'index'])->name('users-a
 //         'title' => 'Penyakit | Diagnosa Penyakit'
 //     ]);
 // })->name('penyakit-admin');
-Route::get('penyakit-admin', [PenyakitAdminController::class, 'index'])->name('penyakit-admin');
+Route::resource('penyakit-admin', PenyakitAdminController::class);
 
 // Route::get('view-penyakit-admin', function () {
 //     return view('pages.admin.view-penyakit', [
