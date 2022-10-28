@@ -27,6 +27,7 @@
                             <tr>
                                 <th>Kode Gejala</th>
                                 <th>Gejala</th>
+                                <th class="no-content">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -34,6 +35,13 @@
                             <tr>
                                 <td class="text-center">{{ $gejala->kode }}</td>
                                 <td>{{ $gejala->keterangan }}</td>
+                                <td class="text-center">
+                                    <form action="{{ route('gejala-admin.destroy', $gejala->id) }}" method="POST" class="mt-2">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-sm btn-danger btn-icon "><i class="fas fa-times"></i> Delete </button>
+                                    </form>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>

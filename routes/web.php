@@ -87,7 +87,8 @@ Route::resource('penyakit-admin', PenyakitAdminController::class);
 // })->name('view-penyakit-admin');
 Route::get('view-penyakit-admin/{penyakits}', [PenyakitAdminController::class, 'show'])->name('view-penyakit-admin');
 
-Route::get('gejala-admin', [GejalaAdminController::class, 'index'])->name('gejala-admin');
+// Route::get('gejala-admin', [GejalaAdminController::class, 'index'])->name('gejala-admin');
+Route::resource('gejala-admin', GejalaAdminController::class);
 // Route::get('gejala-admin', function () {
 //     return view('pages.admin.gejala', [
 //         'title' => 'Gejala | Diagnosa Penyakit'

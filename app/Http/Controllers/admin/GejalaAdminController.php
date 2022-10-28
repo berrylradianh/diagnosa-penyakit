@@ -15,4 +15,10 @@ class GejalaAdminController extends Controller
 
         return view('pages.admin.gejala', compact('title', 'gejalas'));
     }
+
+    public function destroy($id)
+    {
+        $penyakits = Gejala::where('id', $id)->firstorfail()->delete();
+        return redirect()->route('gejala-admin.index');
+    }
 }
