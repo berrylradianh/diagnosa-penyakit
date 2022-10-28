@@ -13,9 +13,11 @@
         </div>
     </div>
 
+    @if (!Auth::user()->role == 'admin')
     <div class="container text-center p-lg-5">
         <a href="{{ Auth::check() ? route ('diagnosa') : route ('login') }}" class="btn btn-lg btn-info w-auto ">Mulai</a>
     </div>
+    @endif
 </section>
 <!-- breadcrumb area end -->
 
