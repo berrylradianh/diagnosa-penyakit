@@ -95,7 +95,62 @@ class GejalaSeeder extends Seeder
                 [
                     'kode' => 'G16',
                     'keterangan' => 'bercak hijau gelap sepanjang tulang daun akan kelihatan jelas pada permukaan bawah daun apabila dilihat ke arah cahaya'
-                ]
+                ],
+
+                [
+                    'kode' => 'G17',
+                    'keterangan' => 'Serangan terlihat daun menguning dan ukuran tandan berkurang'
+                ],
+
+                [
+                    'kode' => 'G18',
+                    'keterangan' => 'Perakaran tidak tumbuh normal'
+                ],
+
+                [
+                    'kode' => 'G19',
+                    'keterangan' => 'Akar serabut tidak tumbuh'
+                ],
+
+                [
+                    'kode' => 'G20',
+                    'keterangan' => 'Ujung akar membusuk dan terdapat lubang seperti terowongan pada bonggol'
+                ],
+
+                [
+                    'kode' => 'G21',
+                    'keterangan' => 'Tanaman tumbuh merana serta Pertumbuhan buah tidak normal dengan beberapa helaian daun mengering biasanya dari daun termuda karena pelepahnya dimakan serangga'
+                ],
+
+                [
+                    'kode' => 'G22',
+                    'keterangan' => 'Lembaran daun robek dan menggulung dan gulungan daun mengering'
+                ],
+
+                [
+                    'kode' => 'G23',
+                    'keterangan' => 'Terdapat ulat berwarna putih kehijauan berbedak di dalam gulungan daun'
+                ],
+
+                [
+                    'kode' => 'G24',
+                    'keterangan' => 'Kulit buah berkudis atau burik, terutama pada buah pada sisir paling bawah atau paling muda'
+                ],
+
+                [
+                    'kode' => 'G25',
+                    'keterangan' => ' Terdapat kotoran pada sela-sela jari buah pada sisir buah yang terserang'
+                ],
+
+                [
+                    'kode' => 'G26',
+                    'keterangan' => ' Pertumbuhan buah tidak normal Perakaran tidak tumbuh normal, akar serabut tidak tumbuh, ujung akar membusuk'
+                ],
+
+                [
+                    'kode' => 'G27',
+                    'keterangan' => 'Terdapat bintik-bintik dan goresan pada kulit buah yang telah tua'
+                ],
             ]
         );
     }

@@ -20,17 +20,65 @@ class PercobaanSeeder extends Seeder
                 'kode' => 'K01',
                 'hasil' => 'Layu Bakteri',
             ],
+
             [
                 'kode' => 'K02',
-                'hasil' => 'Antraknosa',
+                'hasil' => 'Bercak Daun Cercospora',
             ],
+
             [
                 'kode' => 'K03',
-                'hasil' => 'Burik',
+                'hasil' => 'Bercak Daun Cordana',
             ],
+
             [
                 'kode' => 'K04',
-                'hasil' => 'Bercak Daun Cordana',
+                'hasil' => 'Burik',
+            ],
+
+            [
+                'kode' => 'K05',
+                'hasil' => 'Layu Fusarium5.	Antraknosa',
+            ],
+
+            [
+                'kode' => 'K06',
+                'hasil' => 'Layu Bakteri',
+            ],
+
+            [
+                'kode' => 'K07',
+                'hasil' => 'Kerdil Pisang',
+            ],
+
+            [
+                'kode' => 'K08',
+                'hasil' => 'Hama Penggerek Bonggol Pisang',
+            ],
+
+            [
+                'kode' => 'K09',
+                'hasil' => 'Hama Penggerek Batang Pisang',
+            ],
+
+            [
+                'kode' => 'K10',
+                'hasil' => 'Hama penggulung',
+            ],
+
+            [
+                'kode' => 'K11',
+                'hasil' => 'Hama Kudis Buah',
+            ],
+
+            [
+                'kode' => 'K12',
+                'hasil' => 'Serangan Nematoda',
+            ],
+
+            [
+                'kode' => 'K13',
+                'hasil' => 'Thrips ',
             ],
         ]);
     }
