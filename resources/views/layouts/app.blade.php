@@ -41,6 +41,7 @@
                                 </ul>
                             </div>
                         </div>
+                        @if (!Auth::check())
                         <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-4">
                             <div class="header__top-right d-flex justify-content-end align-items-center">
                                 <div class="header__login">
@@ -51,6 +52,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -68,9 +70,15 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
+                                        @if (Auth::check())
+                                        <li>
+                                            <a href="{{ Auth::user()->role == 'admin' ? route ('dashboard-admin') : route ('dashboard-user') }}">Dashboard</a>
+                                        </li>
+                                        @else
                                         <li>
                                             <a href="{{route('home')}}">Home</a>
                                         </li>
+                                        @endif
                                     </ul>
                                 </nav>
                             </div>
