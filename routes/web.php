@@ -104,7 +104,7 @@ Route::get('hasil-admin', [HasilAdminController::class, 'index'])->name('hasil-a
 //     ]);
 // })->name('hasil-admin');
 
-Route::get('rule-admin', [RuleAdminController::class, 'index'])->name('rule-admin');
+Route::resource('rule-admin', RuleAdminController::class);
 // Route::get('rule-admin', function () {
 //     return view('pages.admin.rule', [
 //         'title' => 'Rule | Diagnosa Penyakit'

@@ -17,4 +17,10 @@ class RuleAdminController extends Controller
 
         return view('pages.admin.rule', compact('title', 'gejalas', 'percobaans'));
     }
+
+    public function destroy($id)
+    {
+        $percobaans = Percobaan::where('id', $id)->firstorfail()->delete();
+        return redirect()->route('rule-admin.index');
+    }
 }

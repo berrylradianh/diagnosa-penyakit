@@ -30,6 +30,7 @@
                                 <th>{{ $gejala->kode }}</th>
                                 @endforeach
                                 <th>Hasil</th>
+                                <th class="no-content">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +41,14 @@
                                 <td>{{ $percobaan->has_gejala($gejala->kode) ? '1' : '0' }}</td>
                                 @endforeach
                                 <td>{{ $percobaan->hasil }}</td>
+                                <td class="text-center">
+                                    <form action="{{ route('rule-admin.destroy', $percobaan->id) }}" method="POST" class="mt-2">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-sm btn-danger btn-icon "><i class="fas fa-times"></i> Delete </button>
+                                    </form>
+                                    <a href="{{ url('gejala-admin/'.$gejala->id . '/edit') }}"><button class="mt-2 btn btn-secondary btn-sm">Edit</button></a>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>
