@@ -21,7 +21,8 @@
         <div class="row layout-top-spacing">
 
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-                <div class="widget-content widget-content-area br-6">
+                <a href="{{ url('penyakit-admin/create') }}"><button class="btn btn-success btn-sm">Create</button></a>
+                <div class="widget-content widget-content-area br-6 mt-1">
                     <table id="zero-config" class="table dt-table-hover text-center" style="width:100%">
                         <thead>
                             <tr>

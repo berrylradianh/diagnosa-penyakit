@@ -3,18 +3,18 @@
 @section('link')
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-<link href="{{ ('dashboard/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ ('dashboard/assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset ('dashboard/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset ('dashboard/assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
 <!-- END GLOBAL MANDATORY STYLES -->
 
 <!-- BEGIN PAGE LEVEL STYLES -->
-<link rel="stylesheet" type="text/css" href="{{ ('dashboard/plugins/table/datatable/datatables.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ ('dashboard/plugins/table/datatable/dt-global_style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset ('dashboard/plugins/table/datatable/datatables.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset ('dashboard/plugins/table/datatable/dt-global_style.css') }}">
 
 <!--  BEGIN CUSTOM STYLE FILE  -->
-<link href="{{ ('assets/css/scrollspyNav.css') }}" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="{{ ('assets/css/forms/theme-checkbox-radio.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ ('assets/css/forms/switches.css') }}">
+<link href="{{ asset ('assets/css/scrollspyNav.css') }}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/forms/theme-checkbox-radio.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/forms/switches.css') }}">
 <!--  END CUSTOM STYLE FILE  -->
 @endsection
 
@@ -37,36 +37,38 @@
                                 </div>
                             </div>
 
-                            <div class="widget-content-area">
-                                <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <div class="input-group-prepend" style="margin-left: 1cm;">
-                                        <span class="input-group-text" id="basic-addon5">Nama</span>
+                            <form action="" enctype="multipart/form-data">
+                                <div class="widget-content-area">
+                                    <div class="input-group mb-4" style="margin-top: 10px;">
+                                        <div class="input-group-prepend" style="margin-left: 1cm;">
+                                            <span class="input-group-text" id="basic-addon5">Nama</span>
+                                        </div>
+                                        <input name="nama" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama">
                                     </div>
-                                    <input style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama">
+                                    <div class="input-group mb-4" style="margin-top: 10px;">
+                                        <div class="input-group-prepend" style="margin-left: 1cm;">
+                                            <span class="input-group-text" id="basic-addon5">Gambar</span>
+                                        </div>
+                                        <input name="gambar" style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar">
+                                    </div>
+                                    <div class="input-group mb-4" style="margin-top: 10px;">
+                                        <div class="input-group-prepend" style="margin-left: 1cm;">
+                                            <span class="input-group-text" id="basic-addon5">Keterangan</span>
+                                        </div>
+                                        <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" aria-label="Keterangan"></textarea>
+                                    </div>
+                                    <div class="input-group mb-4" style="margin-top: 10px;">
+                                        <div class="input-group-prepend" style="margin-left: 1cm;">
+                                            <span class="input-group-text" id="basic-addon5">Solusi</span>
+                                        </div>
+                                        <textarea name="solusi" style="margin-right: 1cm;" type="text" class="form-control" aria-label="Solusi"></textarea>
+                                    </div>
                                 </div>
                                 <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <div class="input-group-prepend" style="margin-left: 1cm;">
-                                        <span class="input-group-text" id="basic-addon5">Gambar</span>
-                                    </div>
-                                    <input style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar">
+                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
                                 </div>
-                                <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <div class="input-group-prepend" style="margin-left: 1cm;">
-                                        <span class="input-group-text" id="basic-addon5">Keterangan</span>
-                                    </div>
-                                    <input style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan">
-                                </div>
-                                <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <div class="input-group-prepend" style="margin-left: 1cm;">
-                                        <span class="input-group-text" id="basic-addon5">Solusi</span>
-                                    </div>
-                                    <input style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi">
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="input-group mb-4" style="margin-top: 10px;">
-                        <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
                     </div>
                 </div>
             </div>

@@ -74,7 +74,7 @@
                                     </div>
                                 </div>
                                 <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
+                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Perbarui">
                                 </div>
                             </form>
                         </div>
