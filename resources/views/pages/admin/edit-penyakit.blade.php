@@ -52,7 +52,7 @@
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
                                             <span class="input-group-text" id="basic-addon5">Gambar</span>
                                         </div>
-                                        <input name="gambar" style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar">
+                                        <input name="gambar" style="margin-right: 1cm;" type="file" multiple class="form-control" placeholder="Gambar" aria-label="Gambar">
                                     </div>
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
@@ -74,7 +74,7 @@
                                     </div>
                                 </div>
                                 <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Perbarui">
+                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
                                 </div>
                             </form>
                         </div>

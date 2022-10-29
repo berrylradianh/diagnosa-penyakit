@@ -37,31 +37,32 @@
                                 </div>
                             </div>
 
-                            <form action="" enctype="multipart/form-data">
+                            <form action="{{ route('penyakit-admin.store') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <div class="widget-content-area">
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
                                             <span class="input-group-text" id="basic-addon5">Nama</span>
                                         </div>
-                                        <input name="nama" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama">
+                                        <input name="nama" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama" required>
                                     </div>
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
                                             <span class="input-group-text" id="basic-addon5">Gambar</span>
                                         </div>
-                                        <input name="gambar" style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar">
+                                        <input name="gambar" style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar" required>
                                     </div>
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
                                             <span class="input-group-text" id="basic-addon5">Keterangan</span>
                                         </div>
-                                        <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" aria-label="Keterangan"></textarea>
+                                        <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" aria-label="Keterangan" required></textarea>
                                     </div>
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
                                             <span class="input-group-text" id="basic-addon5">Solusi</span>
                                         </div>
-                                        <textarea name="solusi" style="margin-right: 1cm;" type="text" class="form-control" aria-label="Solusi"></textarea>
+                                        <textarea name="solusi" style="margin-right: 1cm;" type="text" class="form-control" aria-label="Solusi" required></textarea>
                                     </div>
                                 </div>
                                 <div class="input-group mb-4" style="margin-top: 10px;">

@@ -146,20 +146,20 @@ Route::get('gejala-user', [GejalaUserController::class, 'index'])->name('gejala-
 // })->name('hasil-user');
 Route::get('hasil-user', [HasilUserController::class, 'index'])->name('hasil-user');
 
-Route::get('create-penyakit', function () {
-    return view('pages.admin.create-penyakit', [
-        'title' => 'Penyakit | Diagnosa Penyakit'
-    ]);
-});
+// Route::get('create-penyakit', function () {
+//     return view('pages.admin.create-penyakit', [
+//         'title' => 'Penyakit | Diagnosa Penyakit'
+//     ]);
+// });
 
-Route::get('view-penyakit', function () {
-    return view('pages.admin.view-penyakit', [
-        'title' => 'Penyakit | Diagnosa Penyakit'
-    ]);
-});
+// Route::get('view-penyakit', function () {
+//     return view('pages.admin.view-penyakit', [
+//         'title' => 'Penyakit | Diagnosa Penyakit'
+//     ]);
+// });
 
-Route::get('create-gejala', function () {
-    return view('pages.admin.create-gejala', [
-        'title' => 'Gejala | Diagnosa Penyakit'
-    ]);
-});
+// Route::get('create-gejala', function () {
+//     return view('pages.admin.create-gejala', [
+//         'title' => 'Gejala | Diagnosa Penyakit'
+//     ]);
+// });
