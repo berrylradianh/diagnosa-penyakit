@@ -38,7 +38,7 @@
                                 <td>{{ $diagnosa->user?->name }}</td>
                                 <td>{{ $diagnosa->user?->email }}</td>
                                 <td>{{ $diagnosa->percobaan?->hasil }}</td>
-                                <td>{{ $diagnosa->solusi }}</td>
+                                <td>{{ $diagnosa->penyakit->solusi}}</td>
                                 <td>{{ $diagnosa->created_at->diffForHumans() }}</td>
                             </tr>
                             @endforeach

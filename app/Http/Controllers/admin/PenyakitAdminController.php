@@ -54,4 +54,25 @@ class PenyakitAdminController extends Controller
         $penyakits->update();
         return redirect()->route('penyakit-admin.index');
     }
+
+    public function create()
+    {
+        $title = 'Penyakit | Diagnosa Penyakit';
+        return view('pages.admin.create-penyakit', compact('title'));
+    }
+
+    public function store(Request $request)
+    {
+        // dd($request);
+        $names = str()->uuid()->toString() . '.' . $request->file('gambar')->extension();
+        $request->file('gambar')->move(public_path('assets/img/'), $names);
+        Penyakit::create([
+            'nama' => $request->nama,
+            'keterangan' => $request->keterangan,
+            'solusi' => $request->solusi,
+            'url' => 'assets/img/' . $names
+        ]);
+
+        return redirect()->route('penyakit-admin.index');
+    }
 }

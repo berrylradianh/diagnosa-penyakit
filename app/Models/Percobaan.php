@@ -29,4 +29,9 @@ class Percobaan extends Model
 
         return false;
     }
+
+    public function penyakit()
+    {
+        return $this->belongsTo(Penyakit::class);
+    }
 }

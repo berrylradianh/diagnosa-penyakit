@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Penyakit extends Model
 {
     use HasFactory;
-    protected $guarded = [];
+    protected $fillable = ['url', 'nama', 'keterangan', 'solusi'];
 }

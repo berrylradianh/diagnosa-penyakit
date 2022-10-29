@@ -40,6 +40,6 @@ class DiagnosaController extends Controller
             ]);
         }
 
-        return back();
+        return redirect()->route('hasil-user');
     }
 }

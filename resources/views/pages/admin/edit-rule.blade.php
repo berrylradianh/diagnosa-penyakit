@@ -56,6 +56,14 @@
                                     </div>
 
                                     <div class="input-group mb-4" style="margin-top: 10px;">
+                                        <div class="input-group-prepend" style="margin-left: 1cm;">
+                                            <span class="input-group-text" id="basic-addon5">Gejala</span>
+                                        </div>
+                                        <input name="hasil" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Hasil Percobaan" aria-label="Hasil" value="">
+
+                                    </div>
+
+                                    <div class="input-group mb-4" style="margin-top: 10px;">
                                         <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Submit">
                                     </div>
                             </form>

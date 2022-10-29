@@ -29,7 +29,7 @@
 
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
-                    <a href="index.html">
+                    <a href="{{ route ('dashboard-user') }}">
                         <img src="{{ asset('assets/img/favicon.png') }}" class="navbar-logo" alt="logo">
                     </a>
                 </li>
