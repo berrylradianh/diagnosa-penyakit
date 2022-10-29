@@ -38,7 +38,7 @@ class PercobaanSeeder extends Seeder
 
             [
                 'kode' => 'K05',
-                'hasil' => 'Layu Fusarium5.	Antraknosa',
+                'hasil' => 'Layu Fusarium',
             ],
 
             [
