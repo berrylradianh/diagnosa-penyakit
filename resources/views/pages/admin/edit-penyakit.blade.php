@@ -21,67 +21,67 @@
 @section('content')
 <!--  BEGIN CONTENT AREA  -->
 <div id="content" class="main-content">
-    <div class="container">
-        <center>
-            <div class="container">
+  <div class="container">
+    <center>
+      <div class="container">
 
-                <div class="row layout-top-spacing">
+        <div class="row layout-top-spacing">
 
-                    <div id="basic" class="col-lg-12 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Edit Penyakit</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <form action="{{ route('penyakit-admin.update', $penyakits->id) }}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                                @method('PUT')
-                                <div class="widget-content-area">
-                                    <div class="input-group mb-4" style="margin-top: 10px;">
-                                        <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Nama</span>
-                                        </div>
-                                        <input name="nama" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama" value="{{ $penyakits->nama }}">
-                                    </div>
-                                    <img src="{{ asset($penyakits->url) }}" alt="">
-                                    <div class="input-group mb-4" style="margin-top: 10px;">
-                                        <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Gambar</span>
-                                        </div>
-                                        <input name="gambar" style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar">
-                                    </div>
-                                    <div class="input-group mb-4" style="margin-top: 10px;">
-                                        <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Keterangan</span>
-                                        </div>
-                                        <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan">
-                                        {{ $penyakits->keterangan }}
-                                        </textarea>
-                                        <!-- <input name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan" value="{{ $penyakits->keterangan }}"> -->
-                                    </div>
-                                    <div class="input-group mb-4" style="margin-top: 10px;">
-                                        <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Solusi</span>
-                                        </div>
-                                        <textarea name="solusi" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi">
-                                        {{ $penyakits->solusi }}
-                                        </textarea>
-                                        <!-- <input name="solusi" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi" value="{{ $penyakits->solusi }}"> -->
-                                    </div>
-                                </div>
-                                <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+          <div id="basic" class="col-lg-12 col-sm-12 col-12 layout-spacing">
+            <div class="statbox widget box box-shadow">
+              <div class="widget-header">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                    <h4>Edit Penyakit</h4>
+                  </div>
                 </div>
+              </div>
+
+              <form action="{{ route('penyakit-admin.update', $penyakits->id) }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('PUT')
+                <div class="widget-content-area">
+                  <div class="input-group mb-4" style="margin-top: 10px;">
+                    <div class="input-group-prepend" style="margin-left: 1cm;">
+                      <span class="input-group-text" id="basic-addon5">Nama</span>
+                    </div>
+                    <input name="nama" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama" value="{{ $penyakits->nama }}">
+                  </div>
+                  <img src="{{ asset($penyakits->url) }}" alt="">
+                  <div class="input-group mb-4" style="margin-top: 10px;">
+                    <div class="input-group-prepend" style="margin-left: 1cm;">
+                      <span class="input-group-text" id="basic-addon5">Gambar</span>
+                    </div>
+                    <input name="gambar" style="margin-right: 1cm;" type="file" multiple class="form-control" placeholder="Gambar" aria-label="Gambar">
+                  </div>
+                  <div class="input-group mb-4" style="margin-top: 10px;">
+                    <div class="input-group-prepend" style="margin-left: 1cm;">
+                      <span class="input-group-text" id="basic-addon5">Keterangan</span>
+                    </div>
+                    <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan">
+                    {{ $penyakits->keterangan }}
+                    </textarea>
+                    <!-- <input name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan" value="{{ $penyakits->keterangan }}"> -->
+                  </div>
+                  <div class="input-group mb-4" style="margin-top: 10px;">
+                    <div class="input-group-prepend" style="margin-left: 1cm;">
+                      <span class="input-group-text" id="basic-addon5">Solusi</span>
+                    </div>
+                    <textarea name="solusi" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi">
+                    {{ $penyakits->solusi }}
+                    </textarea>
+                    <!-- <input name="solusi" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi" value="{{ $penyakits->solusi }}"> -->
+                  </div>
+                </div>
+                <div class="input-group mb-4" style="margin-top: 10px;">
+                  <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
+                </div>
+              </form>
             </div>
-    </div>
+          </div>
+        </div>
+      </div>
+  </div>
 </div>
 </center>
 </div>
@@ -99,9 +99,10 @@
 <script src="{{ ('assets/js/app.js') }}"></script>
 
 <script>
-    $(document).ready(function() {
-        App.init();
-    });
+  $(document).ready(function() {
+    App.init();
+  });
+
 </script>
 <script src="{{ ('plugins/highlight/highlight.pack.js') }}"></script>
 <script src="{{ ('assets/js/custom.js') }}"></script>

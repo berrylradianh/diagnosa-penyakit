@@ -43,6 +43,14 @@ class PenyakitAdminController extends Controller
         $penyakits->nama = $request->input('nama');
         $penyakits->keterangan = $request->input('keterangan');
         $penyakits->solusi = $request->input('solusi');
+
+
+        if ($request->hasFile('gambar')) {
+            $names = str()->uuid()->toString() . '.' . $request->file('gambar')->extension();
+            $request->file('gambar')->move(public_path('assets/img/'), $names);
+            $penyakits->url = 'assets/img/' . $names;
+        }
+
         $penyakits->update();
         return redirect()->route('penyakit-admin.index');
     }
