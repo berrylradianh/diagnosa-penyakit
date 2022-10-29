@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Penyakit;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -18,7 +19,6 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(User::class);
             $table->string('kode_percobaan');
-            $table->longText('solusi')->nullable();
             $table->timestamps();
         });
     }
