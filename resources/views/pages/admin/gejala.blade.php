@@ -41,6 +41,7 @@
                                         @method('DELETE')
                                         <button class="btn btn-sm btn-danger btn-icon "><i class="fas fa-times"></i> Delete </button>
                                     </form>
+                                    <a href="{{ url('gejala-admin/'.$gejala->id . '/edit') }}"><button class="mt-2 btn btn-secondary btn-sm">Edit</button></a>
                                 </td>
                             </tr>
                             @endforeach

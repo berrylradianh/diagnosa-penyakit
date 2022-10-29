@@ -18,7 +18,22 @@ class GejalaAdminController extends Controller
 
     public function destroy($id)
     {
-        $penyakits = Gejala::where('id', $id)->firstorfail()->delete();
+        $gejalas = Gejala::where('id', $id)->firstorfail()->delete();
+        return redirect()->route('gejala-admin.index');
+    }
+
+    public function edit($id)
+    {
+        $gejalas = Gejala::find($id);
+        $title = 'Gejala | Diagnosa Penyakit';
+        return view('pages.admin.edit-gejala', compact('gejalas', 'title'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $gejalas = Gejala::find($id);
+        $gejalas->keterangan = $request->input('keterangan');
+        $gejalas->update();
         return redirect()->route('gejala-admin.index');
     }
 }

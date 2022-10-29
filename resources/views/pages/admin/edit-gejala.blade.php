@@ -32,50 +32,33 @@
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Edit Penyakit</h4>
+                                        <h4>Edit Gejala</h4>
                                     </div>
                                 </div>
                             </div>
 
-                            <form action="{{ route('penyakit-admin.update', $penyakits->id) }}" method="POST">
+                            <form action="{{ route('gejala-admin.update', $gejalas->id) }}" method="POST">
                                 @csrf
                                 @method('PUT')
                                 <div class="widget-content-area">
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Nama</span>
+                                            <span class="input-group-text" id="basic-addon5">Kode</span>
                                         </div>
-                                        <input name="nama" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Nama Penyakit" aria-label="Nama" value="{{ $penyakits->nama }}">
-                                    </div>
-                                    <img src="{{ asset($penyakits->url) }}" alt="">
-                                    <div class="input-group mb-4" style="margin-top: 10px;">
-                                        <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Gambar</span>
-                                        </div>
-                                        <input name="gambar" style="margin-right: 1cm;" type="file" class="form-control" placeholder="Gambar" aria-label="Gambar">
+                                        <input name="kode" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Kode Gejala" aria-label="Kode" value="{{ $gejalas->kode }}" disabled>
                                     </div>
                                     <div class="input-group mb-4" style="margin-top: 10px;">
                                         <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Keterangan</span>
+                                            <span class="input-group-text" id="basic-addon5">Gejala</span>
                                         </div>
-                                        <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan">
-                                        {{ $penyakits->keterangan }}
+                                        <textarea name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Gejala" aria-label="Keterangan">
+                                        {{ $gejalas->keterangan }}
                                         </textarea>
-                                        <!-- <input name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Keterangan" aria-label="Keterangan" value="{{ $penyakits->keterangan }}"> -->
+                                        <!-- <input name="keterangan" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Gejala" aria-label="Keterangan" value="{{ $gejalas->keterangan }}"> -->
                                     </div>
                                     <div class="input-group mb-4" style="margin-top: 10px;">
-                                        <div class="input-group-prepend" style="margin-left: 1cm;">
-                                            <span class="input-group-text" id="basic-addon5">Solusi</span>
-                                        </div>
-                                        <textarea name="solusi" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi">
-                                        {{ $penyakits->solusi }}
-                                        </textarea>
-                                        <!-- <input name="solusi" style="margin-right: 1cm;" type="text" class="form-control" placeholder="Solusi" aria-label="Solusi" value="{{ $penyakits->solusi }}"> -->
+                                        <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Submit">
                                     </div>
-                                </div>
-                                <div class="input-group mb-4" style="margin-top: 10px;">
-                                    <input class="btn-primary" type="submit" class="form-control" style="margin-left: 45%" value="Tambahkan">
-                                </div>
                             </form>
                         </div>
                     </div>

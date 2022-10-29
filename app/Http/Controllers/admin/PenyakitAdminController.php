@@ -41,7 +41,6 @@ class PenyakitAdminController extends Controller
     {
         $penyakits = Penyakit::find($id);
         $penyakits->nama = $request->input('nama');
-        $penyakits->nama = $request->input('nama');
         $penyakits->keterangan = $request->input('keterangan');
         $penyakits->solusi = $request->input('solusi');
         $penyakits->update();
