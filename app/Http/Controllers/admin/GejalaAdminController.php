@@ -36,4 +36,22 @@ class GejalaAdminController extends Controller
         $gejalas->update();
         return redirect()->route('gejala-admin.index');
     }
+
+    public function create()
+    {
+        $title = 'Gejala | Diagnosa Penyakit';
+        $gejalas = Gejala::all()->last();
+        return view('pages.admin.create-gejala', compact('title', 'gejalas'));
+    }
+
+    public function store(Request $request)
+    {
+        // dd($request->id);
+        Gejala::create([
+            'kode' => 'G' . ($request->id) + 1,
+            'keterangan' => $request->keterangan
+        ]);
+
+        return redirect()->route('gejala-admin.index');
+    }
 }
