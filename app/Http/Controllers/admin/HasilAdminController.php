@@ -12,7 +12,12 @@ class HasilAdminController extends Controller
     {
         $title = 'Hasil | Diagnosa Penyakit';
         $diagnosas = Diagnosa::query()
-            ->with('user', 'percobaan')
+            ->with([
+                'user',
+                'percobaan' => [
+                    'penyakit'
+                ]
+            ])
             ->latest()
             ->get();
 

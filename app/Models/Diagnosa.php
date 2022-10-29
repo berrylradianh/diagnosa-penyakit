@@ -12,7 +12,6 @@ class Diagnosa extends Model
     protected $fillable = [
         'user_id',
         'kode_percobaan',
-        'solusi',
     ];
 
     public function user()

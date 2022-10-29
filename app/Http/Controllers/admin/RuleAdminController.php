@@ -13,7 +13,7 @@ class RuleAdminController extends Controller
     {
         $title = 'Rule | Diagnosa Penyakit';
         $gejalas = Gejala::all();
-        $percobaans = Percobaan::with('percobaan_has_gejalas')->get();
+        $percobaans = Percobaan::with('percobaan_has_gejalas', 'penyakit')->get();
 
         return view('pages.admin.rule', compact('title', 'gejalas', 'percobaans'));
     }

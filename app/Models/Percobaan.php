@@ -11,7 +11,8 @@ class Percobaan extends Model
 
     protected $fillable = [
         'kode',
-        'hasil'
+        'hasil',
+        'penyakit_id'
     ];
 
     public function percobaan_has_gejalas()
