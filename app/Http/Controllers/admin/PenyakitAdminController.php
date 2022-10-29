@@ -24,15 +24,15 @@ class PenyakitAdminController extends Controller
         return view('pages.admin.view-penyakit', compact('penyakits', 'title'));
     }
 
-    public function destroy($id)
+    public function destroy(Penyakit $id)
     {
-        $penyakits = Penyakit::where('id', $id)->firstorfail()->delete();
+        $id->delete();
         return redirect()->route('penyakit-admin.index');
     }
 
-    public function edit($id)
+    public function edit(Penyakit $penyakits)
     {
-        $penyakits = Penyakit::find($id);
+        // $penyakits = Penyakit::find($id);
         $title = 'Penyakit | Diagnosa Penyakit';
         return view('pages.admin.edit-penyakit', compact('penyakits', 'title'));
     }
